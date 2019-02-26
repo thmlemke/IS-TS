@@ -1,0 +1,1 @@
+Stoðgögn fyrir tækniforskrift um Greiðslutilkynningu TS142
