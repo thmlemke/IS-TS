@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemittanceAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:RemittanceAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:RemittanceAdvice-2">
+	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+	<cbc:CustomizationID>urn:fdc:stadlar.is:trns:grtilk:1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:stadlar.is:profile:ts142:1.0</cbc:ProfileID>
+	<cbc:ID>123</cbc:ID>
+	<cbc:IssueDate>2019-01-01</cbc:IssueDate>
+	<cbc:IssueTime>13:00:00</cbc:IssueTime>
+	<cbc:DocumentCurrencyCode>ISK</cbc:DocumentCurrencyCode>
+	<cbc:TotalPaymentAmount currencyID="ISK">9000</cbc:TotalPaymentAmount>
+	<cbc:PayerReference>654321</cbc:PayerReference>
+	<cbc:InvoicingPartyReference>6543215</cbc:InvoicingPartyReference>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0196">1234567890</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Kaupandastofnunin</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cbc:CompanyID schemeID="0196">4102697509</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">1234567890124</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Sölufyrirtækið hf.</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cbc:CompanyID schemeID="0196">5203092370</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:PayeeParty>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="378">3234567890</cbc:ID>
+		</cac:PartyIdentification>
+		<cac:PartyName>
+			<cbc:Name>Faktorinn ehf</cbc:Name>
+		</cac:PartyName>
+	</cac:PayeeParty>
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>42</cbc:PaymentMeansCode>
+		<cbc:PaymentID>gr12345</cbc:PaymentID>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>123456789012</cbc:ID>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+	<cac:RemittanceAdviceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:BalanceAmount currencyID="ISK">10000</cbc:BalanceAmount>
+		<cbc:InvoicingPartyReference>6543215</cbc:InvoicingPartyReference>
+		<cac:BuyerCustomerParty>
+			<cac:Party>
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="0196">1234567890</cbc:ID>
+				</cac:PartyIdentification>
+				<cac:PartyName>
+					<cbc:Name>Kaupandi A</cbc:Name>
+				</cac:PartyName>
+			</cac:Party>
+		</cac:BuyerCustomerParty>
+		<cac:DocumentReference>
+			<cbc:ID>6543</cbc:ID>
+			<cbc:IssueDate>2018-12-01</cbc:IssueDate>
+			<cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+			<cbc:DocumentType>Reikningur</cbc:DocumentType>
+		</cac:DocumentReference>
+	</cac:RemittanceAdviceLine>
+	<cac:RemittanceAdviceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:BalanceAmount currencyID="ISK">-1000</cbc:BalanceAmount>
+		<cbc:InvoicingPartyReference>6543215</cbc:InvoicingPartyReference>
+		<cac:BuyerCustomerParty>
+			<cac:Party>
+				<cac:PartyName>
+					<cbc:Name>Kaupandi B</cbc:Name>
+				</cac:PartyName>
+				<cac:PartyLegalEntity>
+					<cbc:CompanyID>2234567890</cbc:CompanyID>
+				</cac:PartyLegalEntity>
+			</cac:Party>
+		</cac:BuyerCustomerParty>
+		<cac:DocumentReference>
+			<cbc:ID>8544</cbc:ID>
+			<cbc:IssueDate>2018-12-15</cbc:IssueDate>
+			<cbc:DocumentTypeCode>381</cbc:DocumentTypeCode>
+			<cbc:DocumentType>Kreditreikningur</cbc:DocumentType>
+		</cac:DocumentReference>
+	</cac:RemittanceAdviceLine>
+</RemittanceAdvice>
